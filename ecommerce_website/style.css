@@ -1,0 +1,415 @@
+*{
+    font-family: 'Robot',sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(212,211,211);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+    padding:0px 20px;
+    position: fixed;
+    top:0%;
+    width: 100%;    
+}
+
+nav ul{
+    display:flex;
+    align-items: center;
+    gap: 14px;
+    margin-right: 50px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color:rgb(118, 73, 73);
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a:hover, ul li a.active{
+    color:rgb(8, 182, 240);
+}
+
+.icon{
+    align-items: center;
+    display: flex;
+    font-size: 27px;
+    display: none;
+    margin-right: 60px;
+}
+.main{
+display: flex;
+justify-content: space-around;
+margin-top: 155px;
+}
+
+.main h1{
+    font-size: 55px;
+    color:rgb(5, 151, 151);
+}
+
+.main h2{
+    font-size: 33px;
+}
+.main button{
+    width: 120px;
+    height: 34px;
+    color:white;
+    border:none;
+    background-color: rgb(4, 164, 164);
+    font-size: 15px;
+}
+
+.main button:hover{
+    background-color:transparent;
+    border:2px solid rgb(3, 123, 123);
+    color:black;
+    cursor: pointer;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+#img{
+    width: 280px;
+    height: 320px;
+}
+
+.shop{
+    width: 100%;
+    margin: auto;
+    padding-top:100px;
+}
+
+.cards .crd{
+    margin-inline:22px;
+    text-align: center;
+}
+
+.crd i{
+    color:rgb(248, 118, 3);
+    padding-top: -12px;
+    position: relative;
+}
+.crd h3{
+    margin-top: 3px;
+}
+
+.head{
+    text-align: center;
+    padding:25px;
+    font-size: 19px;
+}
+.head span{
+    color:orangered;
+}
+
+.review1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+    
+}
+.review{
+ padding-top:100px;
+}
+
+.review1 .rcard{
+ width: 260px;
+ height:240px;
+ background-color: #fff;
+ text-align: center;
+ padding:13px;
+}
+
+#img1{
+    width: 42%;
+    border-radius: 50%;
+}
+.rcard button{
+    width:98px;
+    height:38px;
+    background-color: rgb(3,165, 165);
+    color:white;
+    border:none;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.rcard:hover{
+  background-color: rgb(202, 195, 195);
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top:100px;
+
+}
+.blog .blogCard{
+    width: 300px;
+    height:340px;
+    text-align: center;
+    background-color: white;
+    margin-inline: 22px;
+    padding:10px;
+    border-radius: 5px;
+
+
+}
+.blogCard img{
+    width:100%;
+    border-radius: 5px;
+
+}
+.blogCard a{
+    padding:10px  28px;
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(11, 224, 224);
+}
+.blogCard:hover{
+    background-color:rgb(114, 113, 113);
+    transition: 1s ease;
+}
+.read{
+    padding-top:30px;
+}
+.connect{
+    text-align: center;
+ 
+
+}
+.contact{
+    padding-top:100px;
+
+}
+.connect input {
+    width:340px;
+    padding:11px;
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 11px;
+    border:2px solid black;
+}
+.connect button{
+    width: 160px;
+    height:50px;
+    background-color: rgb(16, 201, 201);
+    color:white;
+    font-size: 20px;
+    border:none;
+    margin-top: 22px;
+    cursor: pointer;
+    padding:13px 40px;
+}
+
+.connect button:hover{
+    color:black;
+    background-color: transparent;
+    border:2px solid black;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding:44px;
+    margin-top: 33px;
+    color:white;
+}
+
+/* item pages css pages */
+
+.itemPage{
+    display: none;
+    margin-top: 20px;
+    margin-left: 25px;
+    gap:20px;
+    margin-bottom: 50px;
+}
+
+.itemPage img{
+    width:350px;
+    height: 400px;
+}
+
+.itemText h2{
+    color:green;
+}
+.itemPage input{
+    width: 30px;
+    padding:4px;
+    font-size: 14px;
+}
+
+.itemText a{
+    padding:4px 20px;
+    background-color: orangered;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+   
+
+}
+
+/* buy items */
+
+
+.buyPage{
+    display: none;
+    width:40%;
+    background-color: #fff;
+    padding:22px;
+    position: absolute;
+    left:50%;
+    top:11%;
+
+}
+
+.buyText{
+    padding:22px;
+}
+
+.buyPage #icons{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    padding:5px;
+    background-color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.buyText  input{
+    width:95%;
+    padding:7px;
+    border:2px solid black;
+    margin-top: 8px;
+}
+
+.buyText button{
+    width:120px;
+    height:34px;
+    background-color: rgb(1,125,125);
+    margin-top: 22px;
+    color:white;
+    border:none;
+
+}
+
+.buyText select{
+    padding:4px;
+    font-size: 15px;
+}
+/* Styles to apply when the screen width is 768 pixels or less */
+
+@media only screen and (max-width:600px){
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+
+    }
+    .buybtn{
+        cursor: pointer;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        top:55px;
+        width: 100%;
+        text-align: center;
+        height: 240px;
+        
+    }
+    
+}
+  
+/*   responsive degined my    */
+
+
+@media only screen and (max-width:1000px){
+    .main{
+      display: block;
+      text-align: center;
+      
+    }
+    .main img{
+        margin-top: 30px;
+        width: 500px;
+        border-radius: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-width:400px){
+    .main{
+      display: block;
+      text-align: center;
+      
+    }
+    .main img{
+        margin-top: 30px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .blog .blogCard{
+         margin-inline: 20px;
+    }
+}
+
+
+@media only screen and (max-width:351px){
+    .main{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      flex-direction: column;      
+    }
+    .main h2{
+        
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        font-weight: 800;
+        margin-left: 30px;
+    }  
+}
+
+@media only screen and (max-width:351px){
+    .connect input{
+        width:250px;
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+
+    }
+    
+}
